@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #2196f3;
+    color: white;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Rubik', sans-serif;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-weight: 500;
+}
+/* nav and search menu */
+#search-content {
+    height: 100vh;
+    padding: 15px;
+    background-color: #ffffff;
+}
+.clear-city-btn{
+    margin: 10px ;
+    text-align: center;;
+}
+#close {
+    margin-left: 8px;
+}
+#close-div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #666666;
+    height: 40px;
+}
+#close-div:hover {
+    font-size: larger;
+}
+/* search input and buttons */
+input {
+    border: 1px solid cornflowerblue;
+    padding: 4px;
+    border-radius: 3px;
+    width: 90%;
+    margin-bottom: 16px;
+}
+.btn-container {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornflowerblue;
+    color: #ffffff;
+    margin-top: 8px;
+    border-radius: 3px;
+    padding: 4px;
+}
+.city-btn {
+    background-color: transparent;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.delete {
+    color: #ffffff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.delete:hover, .delete:focus {
+    border: none;
+    outline: none;
+    font-weight: 600;
+}
+.city-btn:hover, .city-btn:focus, .city-btn:active {
+    box-shadow: darkgray;
+    border: none;
+    outline: none;
+}
+/* today city and temp */
+.flex-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 45px 0 300px 20px;
+}
+#left-container {
+    display: flex;
+    padding-top:15px;
+}
+#today-condition-container {
+    text-align: center;
+    margin-right: 15px;
+}
+#arrow {
+    margin-right: 20px;
+}
+#arrow:hover, #arrow:focus {
+    font-weight: 800;
+}
+/* #current-temp-container {
+    display: flex;
+} */
+#today-temp {
+    font-size: 3rem;
+    font-weight: 400;
+}
+#today-container {
+    text-align: center;
+}
+#city-name {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+#city-name:hover, #city-name:focus{
+    font-weight: 600;
+}
+#today-icon {
+    float:right;
+}
+#today-weather {
+    position: relative;
+    top: -20px;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+/* today other info */
+#info-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-top: 10px;
+}
+.info {
+    text-align: center;
+}
+#uv-container {
+    border-radius: 5px;
+    padding: 2px 10px;
+}
+/* forcast cards */
+#forcast-container {
+    overflow-x: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin-left: 8px;
+    margin-top: 5%;
+}
+.card {
+    width: 15%;
+    padding: 20px;
+    margin: 30px 4px;
+    display: inline-block;
+    text-align: center;
+    background-color: #ffffff78;
+    border-radius: 10px;
+    font-weight: 400;
+}
+.forcast-temp {
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 2rem;
+}
+.day {
+    text-transform: uppercase;
+}
+@media only screen and (max-width:800px){
+    #forcast-container {
+        justify-content: flex-start;
+    }
+}
