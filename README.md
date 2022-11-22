@@ -7,4 +7,4 @@ SO THAT I can plan my trip and pack my bags accordingly.
 
 LINKS:
 GitHub: https://github.com/prigh-a/Homework6-Server-side-API-s
-Web: 
+Web: https://prigh-a.github.io/Homework6-Server-side-API-s/
